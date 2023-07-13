@@ -3,3 +3,4 @@
 	vel = 5;
 	velv = 0;
 	velh = 0;
+	god_mode = false;
