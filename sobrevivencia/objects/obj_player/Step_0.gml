@@ -16,7 +16,10 @@
 	 down = keyboard_check(ord("S"));
 	}
 	 
+	 coletar();
+	 
 	 velh= (right-left)*vel;
 	 velv= (down-up)*vel;
+	
 	 
 	

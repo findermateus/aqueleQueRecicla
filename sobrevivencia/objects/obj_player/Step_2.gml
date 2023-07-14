@@ -6,5 +6,7 @@
 x+=velh;
 y+=velv;
 
+ fica_nomapa();
+
 
 
