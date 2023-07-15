@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+	
+	if (velh!=0) image_xscale = sign(velh);
+	
 	if(keyboard_check_pressed(vk_alt)){
 		if(god_mode==false){
 			god_mode=true;
