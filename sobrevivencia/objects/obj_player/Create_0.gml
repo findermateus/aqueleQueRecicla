@@ -28,6 +28,23 @@
 			//indo para direita
 				x= _col.bbox_left + (x-bbox_right);
 				velh = 0;
+			}else if(velh<0){
+				x= _col.bbox_right +(x-bbox_left)
+				velh =0;
+			}
+			
+		}
+		_col = instance_place(x,y+velv,obj_col);
+		if(_col){
+			//subindo
+			if(velv<0){
+			//subindo
+				y = _col.bbox_bottom +(y-bbox_top);
+				velv=0;
+			}else if(velv>0){
+			//indo para baixo
+				y=_col.bbox_top +(y-bbox_bottom);
+				velv =0;
 			}
 		}
 	}
