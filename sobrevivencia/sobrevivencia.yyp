@@ -40,6 +40,7 @@
     "IDEVersion": "2023.6.0.89",
   },
   "resources": [
+    {"id":{"name":"obj_col","path":"objects/obj_col/obj_col.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"obj_zumbi","path":"objects/obj_zumbi/obj_zumbi.yy",},},
     {"id":{"name":"obj_alimento","path":"objects/obj_alimento/obj_alimento.yy",},},
@@ -51,6 +52,7 @@
     {"id":{"name":"fnt_ui","path":"fonts/fnt_ui/fnt_ui.yy",},},
     {"id":{"name":"ts_ground","path":"tilesets/ts_ground/ts_ground.yy",},},
     {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},},
+    {"id":{"name":"spr_col","path":"sprites/spr_col/spr_col.yy",},},
     {"id":{"name":"spr_thirst","path":"sprites/spr_thirst/spr_thirst.yy",},},
     {"id":{"name":"obj_arma","path":"objects/obj_arma/obj_arma.yy",},},
     {"id":{"name":"spr_grass","path":"sprites/spr_grass/spr_grass.yy",},},

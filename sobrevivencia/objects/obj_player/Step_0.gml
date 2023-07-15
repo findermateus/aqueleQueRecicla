@@ -20,6 +20,7 @@
 	 
 	 velh= (right-left)*vel;
 	 velv= (down-up)*vel;
+	 colidir();
 	
 	 
 	

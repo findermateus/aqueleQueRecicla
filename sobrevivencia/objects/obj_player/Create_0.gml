@@ -10,16 +10,25 @@
 		item_prox = instance_nearest(x,y,obj_item_pai);
 		dis = point_distance(x,y,item_prox.x,item_prox.y);
 		if (dis<=global.distancia){
-			if(keyboard_check_pressed(ord("E"))){
+			if(keyboard_check(ord("E"))){
 			item_prox.inventario =true;;
 			desenhar=false;
 			}
 		 }
 		}
 	}
-	
 	fica_nomapa = function(){
 	x =clamp(x,16,room_width-16);
 	y =clamp(y,16,room_height-16);
+	}
+	colidir = function(){
+		var _col = instance_place(x+velh,y,obj_col);
+		if(_col){
+			if(velh>0){
+			//indo para direita
+				x= _col.bbox_left + (x-bbox_right);
+				velh = 0;
+			}
+		}
 	}
 	
