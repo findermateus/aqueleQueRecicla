@@ -22,7 +22,7 @@ indo_inventario = function(){
 	}
 
 }
-
+vel =0;
 
 
 

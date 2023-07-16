@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-	vel = 5;
+	vel = 3;
 	velv = 0;
 	velh = 0;
 	god_mode = false;
