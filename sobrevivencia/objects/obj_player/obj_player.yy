@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player_up",
-    "path": "sprites/spr_player_up/spr_player_up.yy",
+    "name": "spr_player_iddle",
+    "path": "sprites/spr_player_iddle/spr_player_iddle.yy",
   },
   "spriteMaskId": null,
   "visible": true,

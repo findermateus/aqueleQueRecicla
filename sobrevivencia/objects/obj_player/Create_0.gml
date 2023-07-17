@@ -1,20 +1,41 @@
 /// @description Insert description here
 // You can write your code in this editor
-	vel = 3;
+	vel = 2;
 	velv = 0;
 	velh = 0;
 	god_mode = false;
 	desenhar=true
-	
+	troca_sprite = function(){
+		if(velv<=0)
+		{
+			sprite_index=spr_player_up;
+		}
+		if(velh!=0&&velv==0){
+			sprite_index=spr_player_diagonal;
+		}
+		if(velv>0) 
+		{
+		sprite_index=spr_play_down;
+		}
+		if(velv==0&&velh==0) sprite_index = spr_player_iddle;
+	}
 	coletar = function(){
 		if(instance_exists(obj_item_pai)){
+		
 		item_prox = instance_nearest(x,y,obj_item_pai);
+		
 		dis = point_distance(x,y,item_prox.x,item_prox.y);
-		if (dis<=global.distancia){
-			if(keyboard_check(ord("E"))){
-			item_prox.inventario =true;;
-			desenhar=false;
+			
+			if (dis<=global.distancia){
+				if collision_line(x,y,item_prox.x,item_prox.y,obj_col,1,0){
+				desenhar=false;
+				}else{
+					desenhar=true;
+					if(keyboard_check_pressed(ord("E"))){
+				item_prox.inventario =true;;
+				desenhar=false;
 			}
+				}		
 		 }
 		}
 	}
@@ -50,4 +71,3 @@
 			velv=0;
 		}
 	}
-	
