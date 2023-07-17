@@ -4,7 +4,7 @@
 	var posx = 30;
 	draw_set_font(fnt_ui)
 	repeat(2){
-	draw_text(posx,room_height/3,texto);
+	draw_text(posx,600,texto);
 	texto = "Água: "+string(global.agua);
 	posx+=150;
 	}

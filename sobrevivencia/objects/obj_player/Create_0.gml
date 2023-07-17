@@ -1,10 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 	vel = 2;
+	vel_diagonal = vel*0.707;
 	velv = 0;
 	velh = 0;
 	god_mode = false;
 	desenhar=true
+	
 	troca_sprite = function(){
 		if(velv<=0)
 		{
@@ -69,5 +71,14 @@
 				
 			}
 			velv=0;
+		}
+	}
+	
+	cria_particula = function(){
+		if(velv!=0||velh!=0){
+			var _pos = random_range(6,-6);
+			var _particula = instance_create_layer(obj_player.x+_pos,obj_player.y+6,"particles",obj_particle_player);	
+			_particula.velh=(sign(velh)*-1)*0.5;
+			_particula.velv=(sign(velv)*-1)*0.5;
 		}
 	}
