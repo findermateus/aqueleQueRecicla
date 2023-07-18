@@ -2,11 +2,11 @@
   "FolderOrderSettings": [
     {"name":"inimigos","order":2,"path":"folders/Objects/inimigos.yy",},
     {"name":"objs","order":3,"path":"folders/Objects/objs.yy",},
+    {"name":"player","order":6,"path":"folders/Objects/player.yy",},
     {"name":"ambiente","order":4,"path":"folders/Sprites/assets/ambiente.yy",},
     {"name":"inimigos","order":2,"path":"folders/Sprites/assets/inimigos.yy",},
     {"name":"objs","order":3,"path":"folders/Sprites/assets/objs.yy",},
     {"name":"player","order":1,"path":"folders/Sprites/assets/player.yy",},
-    {"name":"player","order":6,"path":"folders/Objects/player.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_particle","order":5,"path":"sprites/spr_particle/spr_particle.yy",},

@@ -4,13 +4,26 @@ agua = false;
 comida = false;
 item = random(100);
 valor =1;
-
+canned = function(){
+	sprite_index = spr_canned;
+	image_angle = 1;
+	valor=3;
+}
+frango = function(){
+	sprite_index = spr_hunger;
+	valor = 1;
+}
 
 if (item>50){
 	sprite_index= spr_thirst;
 	agua = true
 }else{
-	sprite_index= choose(spr_hunger,spr_canned);
+	var _item = choose("frango","lata");
+	if(_item=="frango"){
+		sprite_index =spr_hunger;
+	}else{
+		sprite_index = spr_canned;
+	}
 	comida = true;
 }
 aumentar = function(){
