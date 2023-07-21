@@ -15,8 +15,28 @@
 enquanto a pessoa nao acertar a senha, 
 eu vou continuar perguntando
 
+//Sequencia de Fibonacci
+//1,1,2,3,5,8,13,21...
 */
+/*
+var _indice,n1,n2,n3;
+_indice =1;
+n1 =1;
+n2 =0;
+n3=0;
+while(_indice<20){
+	
+	n3=n1+n2;
 
+	n1 = n2;
+	n2 = n3;
+	
+	
+	show_message(n3);
+	_indice++;
+}
+*/
+/*
 var _per1 ="";
 var _r1="cocando o saco";
 
@@ -70,10 +90,37 @@ while(true){
 	break;
 }
 */
+/*
+var _n1,_r;
+for(var i=0;i<10;i++){
+	_n1 =2;
+	_r = i*_n1;
+	
+	show_message(_r);
+
+}
+*/
+//laços de repetição aninhados.
+/*
+for(var i=0;i<=10;i++){
+	for(var j=0;j<=10;j++){
+		show_debug_message(string(i)+" x "+string(j)+" = "+string(i*j));
+	}
+}
+*/
+//dias_da_semana = ["Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sabado"];
+frutas = ["morango","banana","laranja","uva","limao"];
+var _espaco = 100;
+var _largura = sprite_get_width(spr_botao);
+for(var i=0;i<array_length(frutas);i++){
+	var _botao = instance_create_layer(0+(_largura*i)+_espaco,room_height/2,layer,obj_botao);
+	_botao.texto = frutas[i];
+	_espaco+=100
+}
+/*
+for(var i=0;i<=6;i++){
+		show_debug_message(dias_da_semana[i]);	
+}
+*/
 global.cor = c_white
 global.texto = "igredientes: ";
-
-
-
-
-
