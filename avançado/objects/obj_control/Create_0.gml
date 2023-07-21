@@ -108,14 +108,33 @@ for(var i=0;i<=10;i++){
 	}
 }
 */
-//dias_da_semana = ["Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sabado"];
+notas= [];
+var i= 0;
+var soma=0,r;
+while(true){
+	var _add=show_question("voce gostaria de adicionar uma nota?");
+	if(_add){
+		notas[i]=get_integer("Digite a nota "+string(i+1),"");
+		i++;
+		continue;
+	}else{
+		break;
+	}
+}
+for(i=0;i<array_length(notas);i++){
+	soma+=notas[i];
+}
+show_message(soma);
+r=soma/i;
+
+
 frutas = ["morango","banana","laranja","uva","limao"];
 var _espaco = 100;
 var _largura = sprite_get_width(spr_botao);
 for(var i=0;i<array_length(frutas);i++){
-	var _botao = instance_create_layer(0+(_largura*i)+_espaco,room_height/2,layer,obj_botao);
+	var _botao = instance_create_layer(_espaco+(_largura*i)+(_espaco*i),room_height/2,layer,obj_botao);
 	_botao.texto = frutas[i];
-	_espaco+=100
+	//_espaco+=100
 }
 /*
 for(var i=0;i<=6;i++){
