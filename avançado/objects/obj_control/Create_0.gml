@@ -108,6 +108,7 @@ for(var i=0;i<=10;i++){
 	}
 }
 */
+/*
 notas= [];
 var i= 0;
 var soma=0,r;
@@ -126,16 +127,44 @@ for(i=0;i<array_length(notas);i++){
 }
 show_message(soma);
 r=soma/i;
+*/
 
+//categorias
+inventario[0][0] = "Armas";
+inventario[1][0] = "Itens";
+inventario[2][0] = "Equipamentos";
+
+//armas
+inventario[0][1] = "Espada";
+inventario[0][2] = "Porrete de pau";
+inventario[0][3] = "Arco Dos Deuses";
+
+//itens
+inventario[1][1] = "Olhos de Troll";
+inventario[1][2] = "Semente de banana";
+inventario[1][3] = "Salsicha sagrada";
+
+//equipamentos
+
+inventario[2][1] = "Capacete";
+inventario[2][2] = "Cinto de pele de cobra de 5000000000 metros";
+inventario[2][3] = "Sapato de cabeça de bagre";
+
+//CATEGORIA
+
+//ITEM DA CATEGORIA
+categoria=0;
+item=0;
 
 frutas = ["morango","banana","laranja","uva","limao"];
-var _espaco = 100;
-var _largura = sprite_get_width(spr_botao);
+var _espaco = 75;
+var _altura = sprite_get_height(spr_botao);
 for(var i=0;i<array_length(frutas);i++){
-	var _botao = instance_create_layer(_espaco+(_largura*i)+(_espaco*i),room_height/2,layer,obj_botao);
+	var _botao = instance_create_layer((room_width/2)-(sprite_get_width(spr_botao)/2),_espaco+(_espaco*i)+(_altura*i),layer,obj_botao);
 	_botao.texto = frutas[i];
 	//_espaco+=100
 }
+
 /*
 for(var i=0;i<=6;i++){
 		show_debug_message(dias_da_semana[i]);	

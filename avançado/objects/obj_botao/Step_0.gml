@@ -8,6 +8,7 @@
 		if(_clique){
 			global.texto=texto
 			global.cor=cor;
+			audio_play_sound(snd_michael,1,false);
 			}
 	}else{
 		image_alpha=.5;
