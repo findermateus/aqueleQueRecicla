@@ -4,6 +4,7 @@
 	var _mouse_sobre = position_meeting(mouse_x,mouse_y,id);
 	var _clique = mouse_check_button_pressed(mb_left);
 	if (_mouse_sobre){
+
 		image_alpha=1;
 		if(_clique){
 			global.texto=texto
@@ -12,6 +13,7 @@
 			}
 	}else{
 		image_alpha=.5;
+
 	} 
 	
 switch(texto){

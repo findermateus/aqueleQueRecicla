@@ -17,6 +17,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"snd_btn_hover","order":1,"path":"sounds/snd_btn_hover/snd_btn_hover.yy",},
     {"name":"obj_botao","order":1,"path":"objects/obj_botao/obj_botao.yy",},
   ],
 }

@@ -159,6 +159,41 @@ inventario[2][4] = "Pintinho Piu";
 categoria=0;
 item=0;
 
+/*Estrutura do quiz:
+	quanto é um mais um?	qual a capital do brasil
+	1						seila7
+	2						dkska
+	3						dkcnqn
+	4						kmfew
+
+*/
+quiz [0][0] = "Quanto e 1 + 1?";
+quiz [0][1] = 4;
+quiz [0][2] = 11;
+quiz [0][3] = 3;
+quiz [0][4] = 2
+
+quiz [1][0] = "Qual a capital do meu pau?";
+quiz [1][1] = "brasilian from brasil";
+quiz [1][2] = "eita como joga";
+quiz [1][3] = "uma morena gostosinha";
+quiz [1][4] = "ah n consigo pensar agr";
+
+
+quiz [2][0] = "Quanto é 3x2?";
+quiz [2][1] = 4;
+quiz [2][2] = 3;
+quiz [2][3] = 6;
+quiz [2][4] = 5;
+show_message(quiz[0][0]);
+var _tam = array_length(quiz[0]);
+pergunta = 0;
+for(var i=1;i<_tam;i++){
+	var _botao = instance_create_layer(i*sprite_get_width(spr_botao),(room_height/2)-(sprite_get_height(spr_botao)/2),layer,obj_botao);
+	_botao.texto = quiz[pergunta][i];
+
+}
+/*
 frutas = ["morango","banana","laranja","uva","limao"];
 
 //dividindo a room em linhas e colunas com base no tamanho da minha sprite do botao
@@ -169,16 +204,19 @@ var _alt = sprite_get_height(spr_botao);
 var _colunas = room_width div _larg;
 var _linhas = room_height div _alt;
 
-var _posx = 0,_posy=0;
-var _espaco = 46
-tabela = [];
-for(var i=0;i<_linhas;i++){
 
-	for(var j=0;j<_colunas;j++){
-		tabela[i][j] = string(i)+","+string(j);
-		var _botao = instance_create_layer(_espaco+(_larg*j),_alt*i,layer,obj_botao);
-		var _tam = irandom(array_length(frutas)-1);
-		_botao.texto = frutas[_tam];
+var _espaco = 46;
+tabela = [];
+var _tam = irandom(array_length(frutas)-1);
+for(var i=0;i<_linhas;i++){
+	
+		for(var j=0;j<_colunas;j++){
+			if(i%2){
+			tabela[i][j] = string(i)+","+string(j);
+			var _botao = instance_create_layer(_espaco+(_larg*j),_alt*i,layer,obj_botao);
+			var _indice = j%array_length(frutas);
+			_botao.texto = frutas[_indice];
+		}
 	}
 }
 
