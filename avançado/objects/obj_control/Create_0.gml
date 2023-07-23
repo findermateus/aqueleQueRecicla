@@ -130,26 +130,29 @@ r=soma/i;
 */
 
 //categorias
-inventario[0][0] = "Armas";
-inventario[1][0] = "Itens";
-inventario[2][0] = "Equipamentos";
+
+
+
 
 //armas
+inventario[0][0] = "Armas";
 inventario[0][1] = "Espada";
 inventario[0][2] = "Porrete de pau";
 inventario[0][3] = "Arco Dos Deuses";
 
 //itens
+inventario[1][0] = "Itens";
 inventario[1][1] = "Olhos de Troll";
 inventario[1][2] = "Semente de banana";
 inventario[1][3] = "Salsicha sagrada";
+inventario[1][4] = "eita cuzinho";
 
 //equipamentos
-
+inventario[2][0] = "Equipamentos";
 inventario[2][1] = "Capacete";
 inventario[2][2] = "Cinto de pele de cobra de 5000000000 metros";
 inventario[2][3] = "Sapato de cabeça de bagre";
-
+inventario[2][4] = "Pintinho Piu";
 //CATEGORIA
 
 //ITEM DA CATEGORIA
@@ -157,13 +160,31 @@ categoria=0;
 item=0;
 
 frutas = ["morango","banana","laranja","uva","limao"];
-var _espaco = 75;
-var _altura = sprite_get_height(spr_botao);
-for(var i=0;i<array_length(frutas);i++){
-	var _botao = instance_create_layer((room_width/2)-(sprite_get_width(spr_botao)/2),_espaco+(_espaco*i)+(_altura*i),layer,obj_botao);
-	_botao.texto = frutas[i];
-	//_espaco+=100
+
+//dividindo a room em linhas e colunas com base no tamanho da minha sprite do botao
+//pegando as dimensoes da sprite do botao
+var _larg = sprite_get_width(spr_botao);
+var _alt = sprite_get_height(spr_botao);
+
+var _colunas = room_width div _larg;
+var _linhas = room_height div _alt;
+
+var _posx = 0,_posy=0;
+var _espaco = 46
+tabela = [];
+for(var i=0;i<_linhas;i++){
+
+	for(var j=0;j<_colunas;j++){
+		tabela[i][j] = string(i)+","+string(j);
+		var _botao = instance_create_layer(_espaco+(_larg*j),_alt*i,layer,obj_botao);
+		var _tam = irandom(array_length(frutas)-1);
+		_botao.texto = frutas[_tam];
+	}
 }
+
+show_message(instance_number(obj_botao));
+//quantas linhas minha coluna tem
+
 
 /*
 for(var i=0;i<=6;i++){
@@ -171,4 +192,4 @@ for(var i=0;i<=6;i++){
 }
 */
 global.cor = c_white
-global.texto = "igredientes: ";
+global.texto = "ingredientes";
