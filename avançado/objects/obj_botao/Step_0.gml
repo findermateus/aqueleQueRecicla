@@ -9,8 +9,13 @@
 		if(_clique){
 			global.texto=texto
 			global.cor=cor;
-			audio_play_sound(snd_michael,1,false);
+			
+			if(correto){
+				show_message("parabuains!");
+				audio_play_sound(snd_michael,1,false);
+				room_restart();
 			}
+		}
 	}else{
 		image_alpha=.5;
 
