@@ -1,7 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-	
-	
+	//ammo = global.inventario_arma[0][2];
+	if(velh>0) lado =1;
+	if(velh<0) lado =-1
+	arma();
+	tam_mira-=.2;
+	if (tam_mira<=1)tam_mira=1;
 	coletar();
 	troca_sprite();
 	cria_particula();

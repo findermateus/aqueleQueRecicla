@@ -4,7 +4,7 @@
   "name": "spr_arma",
   "bbox_bottom": 8,
   "bbox_left": 0,
-  "bbox_right": 13,
+  "bbox_right": 14,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 14,
+  "width": 15,
 }

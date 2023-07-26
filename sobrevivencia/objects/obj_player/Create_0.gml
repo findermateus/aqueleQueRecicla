@@ -4,9 +4,10 @@
 	//vel_diagonal = vel*0.707;
 	velv = 0;
 	velh = 0;
+	lado = 0;
 	//god_mode = false;
 	desenhar=true
-	
+	cursor_sprite=spr_mouse;
 	troca_sprite = function(){
 		if(velv<=0)
 		{
@@ -29,12 +30,12 @@
 		dis = point_distance(x,y,item_prox.x,item_prox.y);
 			
 			if (dis<=global.distancia){
+				
 				if collision_line(x,y,item_prox.x,item_prox.y,obj_col,1,0){
 				desenhar=false;
 				}else{
-					desenhar=true;
-					if(keyboard_check(ord("E"))){
-				//
+					if(item_prox.inventario==false)desenhar=true;
+					if(keyboard_check_pressed(ord("E"))){
 				item_prox.inventario =true;;
 				desenhar=false;
 			}
@@ -78,8 +79,40 @@
 	cria_particula = function(){
 		if(velv!=0||velh!=0){
 			var _pos = random_range(6,-6);
-			var _particula = instance_create_layer(obj_player.x+_pos,obj_player.y+6,"particles",obj_particle_player);	
-			_particula.velh=(sign(velh)*-1)*0.5;
-			_particula.velv=(sign(velv)*-1)*0.5;
+			var _qtd = instance_number(obj_particle_player);
+			if(_qtd<=6){
+				var _particula = instance_create_layer(obj_player.x+_pos,obj_player.y+6,"particles",obj_particle_player);	
+				_particula.velh=(sign(velh)*-1)*0.5;
+				_particula.velv=(sign(velv)*-1)*0.5;
+			}
 		}
 	}
+	mira=false;
+	ammo = 10;
+	tam_mira=1;
+arma = function(){
+	if(global.inventario_arma[0][1]){
+		var _mirando = mouse_check_button(mb_right);
+		if(_mirando){
+			cursor_sprite=cr_none;
+			mira =true;
+			if(ammo>0){
+				if(mouse_check_button_pressed(mb_left)){
+					tam_mira = 2;
+					var _tiro = instance_create_layer(x+(lado*14),y,layer,obj_bala);
+					var _dir = point_direction(_tiro.x,_tiro.y,mouse_x,mouse_y);
+					_tiro.direction= _dir
+					_tiro.speed=4
+					_tiro.image_angle=_dir-90;
+				}
+			}
+		}else{
+			cursor_sprite=spr_mouse;
+			//window_set_cursor(spr_mouse)
+			mira=false
+		}
+		
+	}
+	
+	}
+	

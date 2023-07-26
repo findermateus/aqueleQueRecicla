@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-	
+	window_set_cursor(cr_none);
 	global.vetor_item[0]= 0;
 	global.vetor_item[1]= 1;
 	global.vetor_item[2]= 2;
@@ -16,3 +16,8 @@
 	global.inventario_comida[2][0] = "Água";
 	//lata
 	global.inventario_comida[2][1] = 0;
+	
+	//OUTROS ITENS
+	global.inventario_arma[0][0] = "Arma";
+	global.inventario_arma[0][1] = 0;
+	global.inventario_arma[0][2] = 0;
