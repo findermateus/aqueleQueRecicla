@@ -34,10 +34,12 @@
     "IDEVersion": "2023.6.0.89",
   },
   "resources": [
+    {"id":{"name":"spr_quad","path":"sprites/spr_quad/spr_quad.yy",},},
     {"id":{"name":"spr_botao","path":"sprites/spr_botao/spr_botao.yy",},},
     {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},},
     {"id":{"name":"snd_btn_hover","path":"sounds/snd_btn_hover/snd_btn_hover.yy",},},
     {"id":{"name":"obj_botao","path":"objects/obj_botao/obj_botao.yy",},},
+    {"id":{"name":"obj_quad","path":"objects/obj_quad/obj_quad.yy",},},
     {"id":{"name":"snd_michael","path":"sounds/snd_michael/snd_michael.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],

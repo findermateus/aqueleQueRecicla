@@ -167,6 +167,16 @@ item=0;
 	4						kmfew
 
 */
+
+
+
+
+
+
+
+
+
+/*
 quiz [0][0] = "Quanto e 1 + 1?";
 quiz [0][1] = 2;
 quiz [0][2] = 11;
@@ -187,23 +197,26 @@ quiz [2][3] = 4;
 quiz [2][4] = 5;
 
 
-pergunta = irandom(array_length(quiz)-1);
+if(!variable_global_exists("pergunta")){
+	global.pergunta = irandom(array_length(quiz)-1);
+}
 
-
-var _tam = array_length(quiz[pergunta]);
+var _tam = array_length(quiz[global.pergunta]);
 var _res = irandom(_tam);
 //var _perg = irandom_range
-global.texto=quiz[pergunta][0];
-
+global.texto=quiz[global.pergunta][0];
+//criando os botoes:
 for(var i=1;i<_tam;i++){
 	var _botao = instance_create_layer(i*(sprite_get_width(spr_botao)+40),(room_height/2)-(sprite_get_height(spr_botao)/2),layer,obj_botao);
 	
 	_res%=_tam-1; 
 	if(_res<1) _botao.correto =true;
-	_botao.texto = quiz[pergunta][_res+1];
+	_botao.texto = quiz[global.pergunta][_res+1];
 	_res++;
-
+	
 }
+
+
 global.cor = c_white
 /*
 frutas = ["morango","banana","laranja","uva","limao"];

@@ -33,8 +33,14 @@
 	if keyboard_check_pressed(vk_enter) room_restart();
 
 
+	var _mouse_click = mouse_check_button_released(mb_left);
+if (_mouse_click)
+{
+	var _quad = instance_create_layer(mouse_x,mouse_y,layer,obj_quad);	
+	_quad.x-=sprite_get_width(spr_quad)/2;
+	_quad.y-=sprite_get_height(spr_quad)/2;
+}
 
-
-
+if keyboard_check_pressed(vk_space) show_message(instance_number(obj_quad));
 
 

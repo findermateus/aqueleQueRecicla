@@ -7,21 +7,29 @@
 
 		image_alpha=1;
 		if(_clique){
-			global.texto=texto
+			//global.texto=texto
 			global.cor=cor;
 			
 			if(correto){
-				show_message("parabuains!");
 				audio_play_sound(snd_michael,1,false);
+				show_message("parabuains!");
+				cor = c_green
+				//show_message(obj_control.quiz[global.pergunta][0])
+				global.pergunta++;
+				global.pergunta%=3;
+				//room_restart();
 				room_restart();
+			}else{
+				cor=c_red;
 			}
+			
 		}
 	}else{
 		image_alpha=.5;
 
 	} 
-	
-switch(texto){
+	image_blend = cor;
+/*switch(texto){
 	case "morango":
 		cor = c_red;
 		break;
@@ -41,7 +49,7 @@ switch(texto){
 		cor =c_white;
 }
 
-	image_blend = cor;
+	
 
 	
 
