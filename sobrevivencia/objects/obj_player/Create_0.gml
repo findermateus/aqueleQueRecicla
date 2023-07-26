@@ -1,10 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 	vel = 2;
-	vel_diagonal = vel*0.707;
+	//vel_diagonal = vel*0.707;
 	velv = 0;
 	velh = 0;
-	god_mode = false;
+	//god_mode = false;
 	desenhar=true
 	
 	troca_sprite = function(){
@@ -33,7 +33,8 @@
 				desenhar=false;
 				}else{
 					desenhar=true;
-					if(keyboard_check_pressed(ord("E"))){
+					if(keyboard_check(ord("E"))){
+				//
 				item_prox.inventario =true;;
 				desenhar=false;
 			}

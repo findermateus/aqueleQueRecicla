@@ -7,7 +7,7 @@
 	cria_particula();
 		if (velh!=0) image_xscale = sign(velh);
 	
-	
+	if keyboard_check_pressed(vk_space) room_goto_next();
 	var left,right,up,down{
 	 left = keyboard_check(ord("A"));
 	 right = keyboard_check(ord("D"));
