@@ -105,6 +105,7 @@
 			mira =true;
 			if(ammo>0){
 				if(mouse_check_button_pressed(mb_left)){
+					var _som_tiro = audio_play_sound(snd_tiro,1,false);
 					ammo--;
 					tam_mira = 2;
 					var _tiro = instance_create_layer(x+(lado*14),y,layer,obj_bala);
@@ -139,4 +140,18 @@
 	}
 	
 	}
+		
+
+vendedor = function(){
+		if(instance_exists(obj_vendedor)){
+			var _dis = point_distance(x,y,obj_vendedor.x,obj_vendedor.y);
+			if(_dis<=100){
+				if(keyboard_check_pressed(ord("E"))){
+					obj_vendedor.conversa()
+				}
+			}
+		}
+	
+	}	
+	
 	

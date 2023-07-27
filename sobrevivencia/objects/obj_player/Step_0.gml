@@ -16,7 +16,7 @@
 	cria_particula();
 		if (velh!=0) image_xscale = sign(velh);
 	
-	if keyboard_check_pressed(vk_space) room_goto_next();
+	if keyboard_check_pressed(vk_space) room_goto(vend);
 	var left,right,up,down{
 	 left = keyboard_check(ord("A"));
 	 right = keyboard_check(ord("D"));
@@ -30,7 +30,7 @@ var ver=down-up;
 
 velh= hor*vel;
 velv= ver*vel;
-	 	
+	vendedor();
  colidir();
 	
 		
