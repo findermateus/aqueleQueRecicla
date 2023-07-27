@@ -1,11 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 	//ammo = global.inventario_arma[0][2];
+
+	tposy= y+sin(tempo*0.11)*0.7;
+	tempo++
 	if(velh>0) lado =1;
 	if(velh<0) lado =-1
+	if(global.hostil){
 	arma();
 	tam_mira-=.2;
 	if (tam_mira<=1)tam_mira=1;
+	}
 	coletar();
 	troca_sprite();
 	cria_particula();

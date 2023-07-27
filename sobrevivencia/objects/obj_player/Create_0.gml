@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+	tempo = 0
+	
 	vel = 2;
 	//vel_diagonal = vel*0.707;
 	velv = 0;
@@ -89,24 +91,46 @@
 	}
 	mira=false;
 	ammo = 10;
+	r=false;
 	tam_mira=1;
-arma = function(){
+	som = true;
+	
+	arma = function(){
 	if(global.inventario_arma[0][1]){
 		var _mirando = mouse_check_button(mb_right);
 		if(_mirando){
+			if(som) audio_play_sound(snd_engatilhar,2,false);
+			som=false
 			cursor_sprite=cr_none;
 			mira =true;
 			if(ammo>0){
 				if(mouse_check_button_pressed(mb_left)){
+					ammo--;
 					tam_mira = 2;
 					var _tiro = instance_create_layer(x+(lado*14),y,layer,obj_bala);
 					var _dir = point_direction(_tiro.x,_tiro.y,mouse_x,mouse_y);
 					_tiro.direction= _dir
-					_tiro.speed=4
+					_tiro.speed=6
 					_tiro.image_angle=_dir-90;
+				}
+			}else{
+				if(mouse_check_button_pressed(mb_left))
+				{
+					var _som = audio_play_sound(snd_sem_bala,3,false);
+					//_som =false;
+				}
+				r = true
+				//if(r) audio_play_sound(snd_sem_bala,3,false);
+				if(keyboard_check_pressed(ord("R")))
+				{
+					var _som = audio_play_sound(snd_engatilhar,1,false);
+				ammo=10;
+				r=false
 				}
 			}
 		}else{
+			r=false
+			som=true;
 			cursor_sprite=spr_mouse;
 			//window_set_cursor(spr_mouse)
 			mira=false

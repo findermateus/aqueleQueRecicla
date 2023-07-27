@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+	global.hostil =false;
 	window_set_cursor(cr_none);
 	global.vetor_item[0]= 0;
 	global.vetor_item[1]= 1;

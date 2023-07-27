@@ -34,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_rato",
-    "path": "sprites/spr_rato/spr_rato.yy",
+    "name": "spr_inimigo",
+    "path": "sprites/spr_inimigo/spr_inimigo.yy",
   },
   "spriteMaskId": null,
   "visible": true,

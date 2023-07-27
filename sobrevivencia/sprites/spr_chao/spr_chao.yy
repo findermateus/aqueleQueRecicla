@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_chao",
-  "bbox_bottom": 13,
-  "bbox_left": 1,
-  "bbox_right": 14,
-  "bbox_top": 1,
+  "bbox_bottom": 127,
+  "bbox_left": 0,
+  "bbox_right": 127,
+  "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3c5ce91b-5129-42dd-b8cd-c66404bdd55a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"273eec5d-d56c-497f-98b8-6d2c0cbe1440",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 16,
+  "height": 128,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c9a0f551-f96e-4eaf-af1e-aee9bf3f05c0","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ec83f9fd-41b9-42a3-8c51-b9d4f47b3a4d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "ambiente",
-    "path": "folders/Sprites/assets/ambiente.yy",
+    "name": "vendedor",
+    "path": "folders/Sprites/assets/ambiente/vendedor.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3c5ce91b-5129-42dd-b8cd-c66404bdd55a","path":"sprites/spr_chao/spr_chao.yy",},},},"Disabled":false,"id":"f078fcb1-c17e-4690-a1bd-cdf3387a2137","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"273eec5d-d56c-497f-98b8-6d2c0cbe1440","path":"sprites/spr_chao/spr_chao.yy",},},},"Disabled":false,"id":"5776c57e-1c44-4d5c-9867-9dd8eeba3a71","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 16,
+  "width": 128,
 }

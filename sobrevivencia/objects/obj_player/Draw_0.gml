@@ -30,6 +30,12 @@
 	draw_sprite_ext(spr_mira,0,mouse_x,mouse_y,image_xscale*tam_mira,image_yscale*tam_mira,image_angle,image_blend,image_alpha*.7);
 	draw_sprite_ext(spr_arma,0,x+(lado*12),y,image_xscale*.7,image_yscale*.7,image_angle,image_blend,image_alpha);
 	}
+	if(r){
+		draw_set_font(fnt_display);
+		draw_set_halign(fa_center);
+		draw_text(x,tposy+15,"[R] recarregar");
+		draw_set_font(-1);
+	}
 
 
 

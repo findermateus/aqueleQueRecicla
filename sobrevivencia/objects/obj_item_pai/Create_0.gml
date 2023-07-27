@@ -4,8 +4,10 @@ texto = "";
 pegar = false
 timer = 1;
 inventario=false;
-angulo = random(364);
-image_angle= angulo;
+//angulo = random(364);
+tempo=0
+
+//image_angle= angulo;
 indo_inventario = function(){
 	if instance_exists(obj_player){
 		if(inventario==true){
