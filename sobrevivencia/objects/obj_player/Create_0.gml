@@ -33,9 +33,9 @@
 			
 			if (dis<=global.distancia){
 				
-				if collision_line(x,y,item_prox.x,item_prox.y,obj_col,1,0){
+			/*	if collision_line(x,y,item_prox.x,item_prox.y,obj_col,1,0){
 				desenhar=false;
-				}else{
+				}else{*/
 					if(item_prox.inventario==false)desenhar=true;
 					if(keyboard_check_pressed(ord("E"))){
 				item_prox.inventario =true;;
@@ -44,7 +44,6 @@
 				}		
 		 }
 		}
-	}
 	
 	fica_nomapa = function(){
 	x =clamp(x,16,room_width-16);

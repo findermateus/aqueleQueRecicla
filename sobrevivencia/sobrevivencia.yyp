@@ -32,6 +32,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"assets","folderPath":"folders/Sprites/assets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"ambiente","folderPath":"folders/Sprites/assets/ambiente.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"vendedor","folderPath":"folders/Sprites/assets/ambiente/vendedor.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_vendedor","folderPath":"folders/Sprites/assets/ambiente/vendedor/spr_vendedor.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"efeitos","folderPath":"folders/Sprites/assets/efeitos.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"inimigos","folderPath":"folders/Sprites/assets/inimigos.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"objs","folderPath":"folders/Sprites/assets/objs.yy",},
@@ -40,13 +41,12 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"vend","folderPath":"folders/Sprites/vend.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spr_vendedor","folderPath":"folders/Sprites/assets/ambiente/vendedor/spr_vendedor.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.89",
+    "IDEVersion": "2023.2.1.75",
   },
   "resources": [
     {"id":{"name":"spr_particle","path":"sprites/spr_particle/spr_particle.yy",},},
@@ -58,6 +58,7 @@
     {"id":{"name":"spr_rua","path":"sprites/spr_rua/spr_rua.yy",},},
     {"id":{"name":"spr_parede","path":"sprites/spr_parede/spr_parede.yy",},},
     {"id":{"name":"spr_hunger","path":"sprites/spr_hunger/spr_hunger.yy",},},
+    {"id":{"name":"ap","path":"rooms/ap/ap.yy",},},
     {"id":{"name":"spr_rato","path":"sprites/spr_rato/spr_rato.yy",},},
     {"id":{"name":"spr_player_up","path":"sprites/spr_player_up/spr_player_up.yy",},},
     {"id":{"name":"spr_player_iddle","path":"sprites/spr_player_iddle/spr_player_iddle.yy",},},
@@ -117,6 +118,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"vend","path":"rooms/vend/vend.yy",},},
+    {"roomId":{"name":"ap","path":"rooms/ap/ap.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
