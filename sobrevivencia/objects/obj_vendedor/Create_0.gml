@@ -10,7 +10,7 @@ conversa = function(){
 			var _posx=x-(_tam*3),_posy=y-60,
 			if(!instance_exists(obj_botao)){
 			for(var i=0;i<array_length(texto);i++){
-				var _botao = instance_create_layer(_posx,_posy+(i*_tam),layer,obj_botao);
+				var _botao = instance_create_layer(_posx,_posy+(i*_tam),"botao",obj_botao);
 				_botao.texto=texto[i][0];
 				_posy+=20;
 			}

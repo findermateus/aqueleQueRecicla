@@ -46,20 +46,23 @@ if(_mouse_sobre){
 				break;
 			case "Vender":
 				for(var i =0;i<array_length(global.inventario_venda);i++){
+					/*
 					if(global.valor!=0){
 					var _texto = instance_create_layer(obj_player.x+7,(obj_player.y-10)+(i*9),layer,obj_texto);
 					_texto.texto = "-"+string(global.inventario_venda[i][1])+" "+global.inventario_venda[i][0];
 					_texto.vspeed=-0.7
 					_texto.cor=c_red;
-					}
+					}*/
 					
 					
 					global.inventario_venda[i][1]=0;
 				}
+				if(global.valor!=0){
 				var _texto = instance_create_layer(obj_player.x+7,(obj_player.y+10),layer,obj_texto);
 					_texto.cor=c_green;
 					_texto.texto="+R$"+string(global.valor);
 					_texto.vspeed=-0.5
+				}
 					//_texto.image_alpha=2;
 				global.dinheiro+=global.valor;
 				global.valor = 0

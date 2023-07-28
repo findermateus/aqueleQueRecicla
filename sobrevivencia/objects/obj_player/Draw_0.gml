@@ -27,14 +27,19 @@
 	}
 	
 	
+	if(global.hostil){
 	if (mira){
 		
-	window_set_cursor(spr_mira)
+	//window_set_cursor(spr_mira)
 	//var lado = 1;
 	//var _dir = point_direction(x+(lado*12),y,mouse_x,mouse_y);
 	//show_debug_message(lado)
 	draw_sprite_ext(spr_mira,0,mouse_x,mouse_y,image_xscale*tam_mira,image_yscale*tam_mira,image_angle,image_blend,image_alpha*.7);
 	draw_sprite_ext(spr_arma,0,x+(lado*12),y,image_xscale*.7,image_yscale*.7,image_angle,image_blend,image_alpha);
+	}
+	}else{
+		cursor_sprite=spr_mouse
+	//window_set_cursor(spr_mouse);
 	}
 	if(r){
 		draw_set_font(fnt_display);

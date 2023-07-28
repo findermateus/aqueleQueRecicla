@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_vendedor",
-    "path": "sprites/spr_vendedor/spr_vendedor.yy",
+    "name": "spr_senhor_venda",
+    "path": "sprites/spr_senhor_venda/spr_senhor_venda.yy",
   },
   "spriteMaskId": null,
   "visible": true,

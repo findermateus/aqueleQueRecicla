@@ -42,7 +42,7 @@ indo_atacar = function(){
 if(atacando){
 var _dir = point_direction(x,y,obj_player.x,obj_player.y);
 				direction=_dir;
-				speed=random_range(1.5,3.5);
+				speed=random_range(1,2.5);
 }
 }
 

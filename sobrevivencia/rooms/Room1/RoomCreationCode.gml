@@ -12,7 +12,7 @@ if (mato){
 if (itens== true){
 	repeat(random_range(10,20))
 	{
-		var item = instance_create_layer(random_range(room_width/2,room_width),random_range(10,room_height-10),"itens",obj_alimento);
+		var _item = instance_create_layer(random_range(room_width/3,room_width),random_range(10,room_height-10),"itens",obj_alimento);
 	}
 
 
