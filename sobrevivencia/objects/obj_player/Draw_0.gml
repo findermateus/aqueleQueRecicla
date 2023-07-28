@@ -61,6 +61,10 @@
 		draw_set_halign(fa_left);
 	}
 
-
+	if(draw_cool){
+		draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,c_red,image_alpha*.5)	
+		
+		
+	}
 
 

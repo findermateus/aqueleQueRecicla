@@ -13,5 +13,6 @@ draw_self();
 	//draw_set_halign(-1);
 	draw_set_color(-1);
 	draw_set_font(-1);
+	draw_set_halign(fa_left);
 	
 	}

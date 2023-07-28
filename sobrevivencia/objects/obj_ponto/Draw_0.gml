@@ -11,6 +11,7 @@ if(desenha){
 		draw_text(obj_player.x,obj_player.y+5,"[espaço] "+texto);
 		draw_set_font(-1);
 		//draw_set_halign(-1);
+		draw_set_halign(fa_left);
 	}
 }
 

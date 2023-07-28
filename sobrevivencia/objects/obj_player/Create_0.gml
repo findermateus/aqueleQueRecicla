@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 	tempo = 0
-	
+	vida_max = 3
+	vida = vida_max;
 	vel = 2;
 	//vel_diagonal = vel*0.707;
 	velv = 0;
@@ -152,5 +153,30 @@ vendedor = function(){
 		}
 	
 	}	
+delay_tempo = 60
+delay_cool=0;
+
+
+morrer = function(){
+	var _trans =instance_create_layer(0,0,"trans",obj_transicao);
+	_trans.destino=ap;
+	_trans.image_alpha=1;
+	global.dia++;
+	global.valor=0;
+	global.sono=false;
+	global.inicio=true;
 	
+	if(global.dinheiro>=20){
+	global.dinheiro-=20
+	}else{
+		global.dinheiro=0;
+	}
+	var _trans2 = instance_create_layer(0,0,"trans",obj_trans_dia);
+	_trans2.image_alpha=1;
+	_trans2.morreu =true
+	vida=vida_max;
+
+	
+
+}
 	

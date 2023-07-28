@@ -13,11 +13,14 @@ if (mato){
 }
 
 if (itens== true){
-	repeat(random_range(10,20))
+	repeat(random_range(7,15)+global.dia)
 	{
-		var _item = instance_create_layer(random_range(room_width/3,room_width),random_range(10,room_height-10),"itens",obj_alimento);
+		var _item = instance_create_layer(random_range(308,room_width-30),random_range(80,room_height-80),"itens",obj_alimento);
 	}
-
+if(global.hostil){
+	repeat(random_range(3,6)+global.dia)
+	var _inimigo = instance_create_layer(random_range((room_width/2),room_width-30),random_range(80,room_height-80),"inimigos",obj_rato);
+}
 
 }
 if(!instance_exists(obj_player)){

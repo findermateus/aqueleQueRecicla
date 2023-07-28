@@ -5,7 +5,10 @@
 image_alpha=1;
 alarm[0] = room_speed*3
 foi=false
-
+morreu =false;
+perde_dinheiro = function(){
+		
+}
 
 
 

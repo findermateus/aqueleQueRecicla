@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 funcionar=false;
-dis = 25
+dis = 30
 escrever=false
 texto = "";
 aponta_player = function(){

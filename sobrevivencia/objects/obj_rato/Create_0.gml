@@ -71,6 +71,14 @@ contato_player = function(){
 	var _col = instance_place(x,y,obj_player);
 	if(descanso==false){
 	if(_col){
+		audio_play_sound(snd_tapa,1,false);
+		if(_col.delay_cool<=0)
+		{
+		_col.vida-=1;
+		
+		_col.delay_cool=60;
+		}
+		
 		troca=true
 		descanso = true;
 		delay = room_speed*2;	

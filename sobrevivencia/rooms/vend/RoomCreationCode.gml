@@ -1,6 +1,6 @@
 //mato = false;
 global.hostil = false
-
+global.inicio = false
 if(!instance_exists(obj_player)){
 	switch(global.lugar){
 		case 0:
