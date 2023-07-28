@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 draw_self();
-	if(!instance_exists(obj_botao)&&dis<100)
+	if(!instance_exists(obj_botao)&&dis<50)
 	{
 	draw_set_font(fnt_display);
 	

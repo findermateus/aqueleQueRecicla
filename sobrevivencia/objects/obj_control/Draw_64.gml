@@ -1,17 +1,20 @@
 /// @description Insert description here
 // You can write your code in this editor
-	var _posx=20,_posy=200;
-	draw_set_font(fnt_display);
-	for(var i=0;i<array_length(global.inventario_venda);i++){
-		draw_text(_posx,_posy,string(global.inventario_venda[i][0])+": "+string(global.inventario_venda[i][1]));
-		draw_set_color(c_black);
-		draw_text(_posx+1,_posy+1,string(global.inventario_venda[i][0])+": "+string(global.inventario_venda[i][1]));
-		draw_set_color(-1);
-		_posy+=50;
-	}
-	draw_text(_posx,_posy+50,string(global.valor));
-	draw_text(_posx,_posy+100,string(global.dinheiro));
+	//var _posx=20,_posy=200;
 	
+	//draw_text(_lat,_posy+50,string(global.valor));
+	draw_set_font(fnt_display_botao)
+	draw_set_color(c_black)
+	draw_set_halign(fa_left);
+		draw_set_valign(fa_top);
+	draw_sprite_ext(spr_money,image_index,20,20,2,2,image_angle,image_blend,image_alpha)
+	draw_text(110+1,23+1,"  "+string(global.dinheiro));
+	draw_set_color(c_white);
+	draw_text(110,23,"  "+string(global.dinheiro));
+	draw_set_halign(fa_left)
+	draw_set_valign(fa_top)
+
+	//draw_set_font(-1)
 if(global.hostil){
 	if(global.inventario_arma[0][1]){
 		

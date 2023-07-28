@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+	var _dia = instance_create_layer(0,0,"trans",obj_trans_dia),
 	global.dia = 1;
 	global.hostil =false;
 	window_set_cursor(cr_none);

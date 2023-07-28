@@ -1,0 +1,2 @@
+texto = "entrar";
+destino = ap;

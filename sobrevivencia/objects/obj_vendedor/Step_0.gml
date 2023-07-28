@@ -3,7 +3,7 @@
 
 
 dis = point_distance(x,y,obj_player.x,obj_player.y);
-if(dis<100){	
+if(dis<50){	
 	
 	}else{
 		if(instance_exists(obj_botao)){

@@ -9,18 +9,30 @@
 				if(desenhar==true){
 					draw_set_halign(fa_center);
 					draw_set_font(fnt_display);
+					
+					//NOME
 					var _posy = 16;
 						draw_set_color(c_black);
 						draw_text(item_prox.x+1,item_prox.y+_posy+1,item_prox.texto);
 						draw_set_color(-1);
-					draw_text(item_prox.x,item_prox.y+_posy,item_prox.texto);
+						draw_text(item_prox.x,item_prox.y+_posy,item_prox.texto);
+					
+					//VALOR
+					_posy+=10
+						
+						draw_set_color(c_black);
+						draw_text(item_prox.x,item_prox.y+_posy,"Valor: "+string(item_prox.valor));
+						draw_set_color(-1);
+						draw_text(item_prox.x,item_prox.y+_posy,"Valor: "+string(item_prox.valor));
+					
+					//PEGAR
 					_posy+=10
 					draw_set_color(c_black);
 					draw_text(item_prox.x+1,item_prox.y+_posy+1,"[E] pegar");
 					draw_set_color(-1);
 					draw_text(item_prox.x,item_prox.y+_posy,"[E] pegar");
 				draw_set_font(-1);
-			draw_set_halign(-1);
+			draw_set_halign(fa_left);
 				}
 			}
 		}
@@ -46,6 +58,7 @@
 		draw_set_halign(fa_center);
 		draw_text(x,tposy+15,"[R] recarregar");
 		draw_set_font(-1);
+		draw_set_halign(fa_left);
 	}
 
 

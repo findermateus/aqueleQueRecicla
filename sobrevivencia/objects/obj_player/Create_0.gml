@@ -144,7 +144,7 @@
 vendedor = function(){
 		if(instance_exists(obj_vendedor)){
 			var _dis = point_distance(x,y,obj_vendedor.x,obj_vendedor.y);
-			if(_dis<=100){
+			if(_dis<=50){
 				if(keyboard_check_pressed(ord("E"))){
 					obj_vendedor.conversa()
 				}
