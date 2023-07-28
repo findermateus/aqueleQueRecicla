@@ -21,7 +21,7 @@
 					_posy+=10
 						
 						draw_set_color(c_black);
-						draw_text(item_prox.x,item_prox.y+_posy,"Valor: "+string(item_prox.valor));
+						draw_text(item_prox.x+1,item_prox.y+_posy+1,"Valor: "+string(item_prox.valor));
 						draw_set_color(-1);
 						draw_text(item_prox.x,item_prox.y+_posy,"Valor: "+string(item_prox.valor));
 					
@@ -56,6 +56,10 @@
 	if(r){
 		draw_set_font(fnt_display);
 		draw_set_halign(fa_center);
+		draw_set_color(c_black);
+		
+		draw_text(x+1,tposy+15+1,"[R] recarregar");
+		draw_set_color(-1);
 		draw_text(x,tposy+15,"[R] recarregar");
 		draw_set_font(-1);
 		draw_set_halign(fa_left);

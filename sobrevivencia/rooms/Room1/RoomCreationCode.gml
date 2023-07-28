@@ -15,7 +15,7 @@ if (mato){
 if (itens== true){
 	repeat(random_range(7,15)+global.dia)
 	{
-		var _item = instance_create_layer(random_range(308,room_width-30),random_range(80,room_height-80),"itens",obj_alimento);
+		var _item = instance_create_layer(random_range(308,room_width-30),random_range(80,room_height-80),"itens",obj_barato);
 	}
 if(global.hostil){
 	repeat(random_range(3,6)+global.dia)

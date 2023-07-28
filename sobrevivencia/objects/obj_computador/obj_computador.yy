@@ -1,22 +1,21 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_alimento",
+  "name": "obj_computador",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "objs",
-    "path": "folders/Objects/objs.yy",
+    "name": "ap",
+    "path": "folders/Objects/ap.yy",
   },
   "parentObjectId": {
-    "name": "obj_item_pai",
-    "path": "objects/obj_item_pai/obj_item_pai.yy",
+    "name": "obj_col",
+    "path": "objects/obj_col/obj_col.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -33,7 +32,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_comp",
+    "path": "sprites/spr_comp/spr_comp.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
