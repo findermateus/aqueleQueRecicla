@@ -69,6 +69,7 @@
     {"name":"spr_mouse","order":8,"path":"sprites/spr_mouse/spr_mouse.yy",},
     {"name":"spr_rach","order":6,"path":"sprites/spr_rach/spr_rach.yy",},
     {"name":"obj_arma","order":1,"path":"objects/obj_arma/obj_arma.yy",},
+    {"name":"spr_vida","order":9,"path":"sprites/spr_vida/spr_vida.yy",},
     {"name":"obj_geladeira","order":4,"path":"objects/obj_geladeira/obj_geladeira.yy",},
     {"name":"spr_galho","order":1,"path":"sprites/spr_galho/spr_galho.yy",},
     {"name":"obj_bala","order":3,"path":"objects/obj_bala/obj_bala.yy",},

@@ -29,5 +29,10 @@ if(global.hostil){
 		}
 	
 	}
+	var _posx = 50
+	repeat(obj_player.vida){
+		draw_sprite_ext(spr_vida,0,_posx,600,2,2,image_angle,c_white,.6)
+		_posx+=50
+	}
 }
 	draw_set_font(-1);

@@ -49,7 +49,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.1.75",
+    "IDEVersion": "2023.6.0.89",
   },
   "resources": [
     {"id":{"name":"obj_control_ap","path":"objects/obj_control_ap/obj_control_ap.yy",},},
@@ -115,6 +115,7 @@
     {"id":{"name":"spr_mouse","path":"sprites/spr_mouse/spr_mouse.yy",},},
     {"id":{"name":"spr_rach","path":"sprites/spr_rach/spr_rach.yy",},},
     {"id":{"name":"obj_arma","path":"objects/obj_arma/obj_arma.yy",},},
+    {"id":{"name":"spr_vida","path":"sprites/spr_vida/spr_vida.yy",},},
     {"id":{"name":"obj_geladeira","path":"objects/obj_geladeira/obj_geladeira.yy",},},
     {"id":{"name":"obj_ponto","path":"objects/obj_ponto/obj_ponto.yy",},},
     {"id":{"name":"obj_rato","path":"objects/obj_rato/obj_rato.yy",},},
