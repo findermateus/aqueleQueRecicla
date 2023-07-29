@@ -19,6 +19,7 @@
     {"name":"vend","order":4,"path":"folders/Sprites/vend.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"obj_control_ap","order":11,"path":"objects/obj_control_ap/obj_control_ap.yy",},
     {"name":"spr_sofa","order":3,"path":"sprites/spr_sofa/spr_sofa.yy",},
     {"name":"spr_particle","order":5,"path":"sprites/spr_particle/spr_particle.yy",},
     {"name":"obj_botao","order":1,"path":"objects/obj_botao/obj_botao.yy",},

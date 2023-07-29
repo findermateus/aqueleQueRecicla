@@ -37,17 +37,50 @@ if(_mouse_sobre){
 				destruicao =true;
 			break;
 			case "Sofá":
-				show_message(texto);
+			if(global.dinheiro>=global.moveis[0][2])
+			{
+				if(!instance_exists(obj_sofa)){
+					image_alpha=.5
+					global.dinheiro-=global.moveis[0][2];
+					var _texto =instance_create_layer(obj_player.x+5,obj_player.y,"texto",obj_texto);
+					_texto.cor=c_red;
+					_texto.texto="-R$"+string(global.moveis[0][2]);
+					_texto.vspeed=-0.5
+					
+					global.moveis[0][3] = true
+				//show_message(texto);
+				}
+			}
 			break;
 			case "Televisão":
-				show_message(texto);
+			if(global.dinheiro>=global.moveis[1][2]){
+				if(!instance_exists(obj_tv)){
+					image_alpha=.5
+					global.dinheiro-=global.moveis[1][2];
+					var _texto =instance_create_layer(obj_player.x+5,obj_player.y,"texto",obj_texto);
+					_texto.cor=c_red;
+					_texto.texto="-R$"+string(global.moveis[1][2]);
+					_texto.vspeed=-0.5
+					global.moveis[1][3] = true
+				}
+			}
 			break;
 			case "Geladeira":
+				if(global.dinheiro>=global.moveis[2][2]){
 				if(!instance_exists(obj_geladeira)){
-					instance_create_layer(464,64,"moveis",obj_geladeira);
+					image_alpha=.5
+					global.dinheiro-=global.moveis[2][2];
+					var _texto =instance_create_layer(obj_player.x+5,obj_player.y,"texto",obj_texto);
+	
+					_texto.cor=c_red;
+					_texto.texto="-R$"+string(global.moveis[2][2]);
+					_texto.vspeed=-0.5
+					global.moveis[2][3] = true
 				}
+			}
 
 			break;
+
 			}
 		}
 	}else{

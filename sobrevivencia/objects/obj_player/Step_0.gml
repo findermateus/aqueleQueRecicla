@@ -39,7 +39,8 @@
 	if(delay_cool<=0){
 		draw_cool=false;
 	}
-
+	//DINHEIROOOO
+	if(keyboard_check_pressed(vk_enter)) global.dinheiro+=100;
 
 	 show_debug_message(delay_cool);
 	 

@@ -53,7 +53,6 @@
 	global.moveis[3][1] = "";
 	global.moveis[3][2] = 0;
 	//global.moveis[3][3] = f;
-
 	
 	
 	
