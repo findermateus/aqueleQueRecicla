@@ -17,3 +17,29 @@ if(image_yscale>=1)image_yscale=1;
 
 determina();
 destruir();
+
+
+switch(texto){
+			case "Sofá":
+			if(global.moveis[0][3]){
+				image_alpha = .5
+			
+			}
+				
+			break;
+			case "Televisão":
+			if(global.moveis[1][3]){
+				image_alpha = .5
+			
+			}
+
+			break;
+			case "Geladeira":
+				if(global.moveis[2][3]){
+				image_alpha = .5
+			
+			}
+
+			break;
+
+			}

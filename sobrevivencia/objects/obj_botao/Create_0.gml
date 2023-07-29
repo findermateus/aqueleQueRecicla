@@ -42,6 +42,7 @@ if(_mouse_sobre){
 		if(_mouse_click){
 			switch(texto){
 			case "Vender":
+				audio_play_sound(snd_din,1,false);
 				for(var i =0;i<array_length(global.inventario_venda);i++){
 
 					global.inventario_venda[i][1]=0;

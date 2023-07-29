@@ -7,7 +7,19 @@ for(var i=0;i<array_length(global.moveis)-1;i++){
 				obj_criado[i]=true
 				if(!global.iniciou[i]=true){
 					_movel.image_alpha=0;
-				
+					switch(i){
+						case 0:
+							global.vel+=1;
+						break;
+						case 1:
+							global.ammo_max+=5;
+						break;
+						case 2:
+							global.vida_max++
+						break
+					
+					}
+					
 				}
 				global.iniciou[i]=true;
 			}

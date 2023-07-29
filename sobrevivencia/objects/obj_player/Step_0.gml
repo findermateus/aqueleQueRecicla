@@ -27,8 +27,8 @@
 	}
 	var hor=right-left;
 	var ver=down-up; 
-	velh= hor*vel;
-	velv= ver*vel;
+	velh= hor*global.vel;
+	velv= ver*global.vel;
 	}
 	  if(delay_cool>0)
 		{

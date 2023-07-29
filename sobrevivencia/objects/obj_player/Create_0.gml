@@ -2,9 +2,9 @@
 // You can write your code in this editor
 	numero = 1
 	tempo = 0
-	vida_max = 3
-	vida = vida_max;
-	vel = 2;
+
+	vida = global.vida_max;
+
 	//vel_diagonal = vel*0.707;
 	velv = 0;
 	velh = 0;
@@ -91,7 +91,7 @@
 		}
 	}
 	mira=false;
-	ammo = 10;
+	ammo = global.ammo_max;
 	r=false;
 	tam_mira=1;
 	som = true;
@@ -126,7 +126,7 @@
 				if(keyboard_check_pressed(ord("R")))
 				{
 					var _som = audio_play_sound(snd_engatilhar,1,false);
-				ammo=10;
+				ammo=global.ammo_max;
 				r=false
 				}
 			}
@@ -175,9 +175,7 @@ morrer = function(){
 	var _trans2 = instance_create_layer(0,0,"trans",obj_trans_dia);
 	_trans2.image_alpha=1;
 	_trans2.morreu =true
-	vida=vida_max;
-
-	
+	vida=global.vida_max;
 
 }
 	

@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_sprite_ext(spr_sombra,0,x+7,y+7,image_xscale*5,image_yscale*3,image_angle,c_black,.3)
+//draw_sprite_ext(spr_sombra,0,x+2,y+5,image_xscale*5,image_yscale*3,image_angle,c_black,.3)
 draw_self();
 
 if(escrever)

@@ -10,6 +10,11 @@ image_xscale=0;
 image_yscale=image_xscale;
 som = true
 destruicao = false
+som_click = true;
+
+
+
+
 destruir= function(){
 	if(destruicao){
 		obj_botao1.image_xscale-=0.1
@@ -40,6 +45,8 @@ if(_mouse_sobre){
 			if(global.dinheiro>=global.moveis[0][2])
 			{
 				if(!instance_exists(obj_sofa)){
+					audio_play_sound(snd_din,1,false);
+					//som_click=false
 					image_alpha=.5
 					global.dinheiro-=global.moveis[0][2];
 					var _texto =instance_create_layer(obj_player.x+5,obj_player.y,"texto",obj_texto);
@@ -55,6 +62,7 @@ if(_mouse_sobre){
 			case "Televisão":
 			if(global.dinheiro>=global.moveis[1][2]){
 				if(!instance_exists(obj_tv)){
+					audio_play_sound(snd_din,1,false);
 					image_alpha=.5
 					global.dinheiro-=global.moveis[1][2];
 					var _texto =instance_create_layer(obj_player.x+5,obj_player.y,"texto",obj_texto);
@@ -68,6 +76,7 @@ if(_mouse_sobre){
 			case "Geladeira":
 				if(global.dinheiro>=global.moveis[2][2]){
 				if(!instance_exists(obj_geladeira)){
+					audio_play_sound(snd_din,1,false);
 					image_alpha=.5
 					global.dinheiro-=global.moveis[2][2];
 					var _texto =instance_create_layer(obj_player.x+5,obj_player.y,"texto",obj_texto);
@@ -88,3 +97,4 @@ if(_mouse_sobre){
 	som =true;
 	}
 }
+

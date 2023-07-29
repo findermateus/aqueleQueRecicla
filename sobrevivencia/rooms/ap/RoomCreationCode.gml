@@ -1,5 +1,5 @@
 if(!instance_exists(obj_control)) instance_create_layer(0,0,"control",obj_control);
-
+if(!instance_exists(obj_control_ap)) instance_create_layer(0,0,"control",obj_control_ap);
 
 
 if(!variable_global_exists("inicio")){
@@ -17,5 +17,5 @@ global.lugar = 0;
 if(!variable_global_exists("sono")){
 	global.sono = false
 }
-	if(!instance_exists(obj_control_ap)) instance_create_layer(0,0,"control",obj_control_ap);
+	
 	
