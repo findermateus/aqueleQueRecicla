@@ -14,9 +14,9 @@
     {"name":"efeitos","order":5,"path":"folders/Sprites/assets/efeitos.yy",},
     {"name":"inimigos","order":2,"path":"folders/Sprites/assets/inimigos.yy",},
     {"name":"objs","order":3,"path":"folders/Sprites/assets/objs.yy",},
+    {"name":"obj_caro","order":7,"path":"folders/Sprites/assets/objs/obj_caro.yy",},
     {"name":"player","order":1,"path":"folders/Sprites/assets/player.yy",},
     {"name":"vend","order":4,"path":"folders/Sprites/vend.yy",},
-    {"name":"obj_caro","order":7,"path":"folders/Sprites/assets/objs/obj_caro.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_particle","order":5,"path":"sprites/spr_particle/spr_particle.yy",},
