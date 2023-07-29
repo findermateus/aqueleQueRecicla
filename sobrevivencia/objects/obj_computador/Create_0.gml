@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-dis = 30
+dis = 50
 escrever=false
 es_texto = "[E] Fazer compras";
 
@@ -12,8 +12,11 @@ compras = function(){
 			var _botao = instance_create_layer(room_width/2,30+(_posy*i)+(i*40),"botao",obj_botao1);
 			_botao.texto = global.moveis[i][0];	
 			_botao.texto1 = global.moveis[i][1];
+			if(global.moveis[i][2]!=0){
+			_botao.texto2+= "R$"+string(global.moveis[i][2]);
 		}
 	}
+}
 }
 
 aponta_player = function(){
@@ -25,6 +28,9 @@ aponta_player = function(){
 				//
 			}else{
 				escrever=false
+				if(instance_exists(obj_botao1)){
+					obj_botao1.destruicao=true
+				}
 				//funcionar=false;
 			}
 		}	

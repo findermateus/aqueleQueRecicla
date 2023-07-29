@@ -23,6 +23,13 @@ if(desc){
 	draw_text(x+1,y-4+1,texto1);
 	draw_set_color(c_black);
 	draw_text(x,y-4,texto1);
+	
+	draw_set_color(-1);
+	draw_set_valign(fa_top);
+	draw_text(x+1,4+y+1,texto2);
+	draw_set_color(c_black);
+	draw_text(x,y+4,texto2);
+	
 }
 draw_set_valign(fa_top);
 draw_set_alpha(1);
