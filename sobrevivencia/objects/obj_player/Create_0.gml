@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+	numero = 1
 	tempo = 0
 	vida_max = 3
 	vida = vida_max;

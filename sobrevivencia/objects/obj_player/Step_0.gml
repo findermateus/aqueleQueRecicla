@@ -40,12 +40,11 @@
 		draw_cool=false;
 	}
 
-	
-		if(keyboard_check_pressed(vk_enter)) morrer();
+
 	 show_debug_message(delay_cool);
 	 
 	vendedor();
- colidir();
+	colidir();
 	if(vida<=0){
 		morrer();
 	

@@ -32,6 +32,26 @@
 	global.inventario_arma[0][1] = 0;
 	global.inventario_arma[0][2] = 0;
 	
+	
+	//MOVEIS
+	global.moveis[0][0] = "Sofá";
+	global.moveis[0][1] = "Aumenta a velocidade em 1";
+	global.moveis[0][2] = 30;
+
+	global.moveis[1][0] = "Televisão";
+	global.moveis[1][1] = "";
+	global.moveis[1][2] = 100;
+	
+	global.moveis[2][0] = "Geladeira";
+	global.moveis[2][1] = "Aumenta a vida em 1";
+	global.moveis[2][2] = 50;
+	
+	global.moveis[3][0] = "Sair";
+	global.moveis[3][1] = "";
+
+	
+	
+	
 	//DINHEIRO
 	global.dinheiro=0;
 	global.valor=0;

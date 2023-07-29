@@ -10,8 +10,7 @@ if(image_alpha>=1){
 	room_goto(destino);
 	x=0;
 	y=0
-	image_xscale=room_width*2;
-	image_yscale=room_height*2;
+
 	image_alpha=1;
 	foi=true
 }
