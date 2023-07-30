@@ -6,5 +6,5 @@ image_alpha+=0.01;
 }
 if(image_alpha>=1) image_alpha = 1;
 
-x=272;
-y=180;
+x=280;
+y=90;

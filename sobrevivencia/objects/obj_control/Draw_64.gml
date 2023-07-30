@@ -3,6 +3,8 @@
 	//var _posx=20,_posy=200;
 	
 	//draw_text(_lat,_posy+50,string(global.valor));
+	if(!instance_exists(obj_trans_dia)&&!instance_exists(obj_transicao))
+	{
 	draw_set_font(fnt_display_botao)
 	draw_set_color(c_black)
 	draw_set_halign(fa_left);
@@ -13,7 +15,7 @@
 	draw_text(110,23,"  "+string(global.dinheiro));
 	draw_set_halign(fa_left)
 	draw_set_valign(fa_top)
-
+	}
 	//draw_set_font(-1)
 if(global.hostil){
 	if(global.inventario_arma[0][1]){

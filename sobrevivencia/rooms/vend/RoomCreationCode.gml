@@ -1,6 +1,7 @@
 //mato = false;
 global.hostil = false
 global.inicio = false
+audio_stop_sound(snd_luta);
 if(!instance_exists(obj_player)){
 	switch(global.lugar){
 		case 0:

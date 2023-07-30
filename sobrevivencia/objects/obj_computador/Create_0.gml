@@ -4,7 +4,8 @@ dis = 50
 escrever=false
 es_texto = "[E] Fazer compras";
 
-
+image_xscale=.5;
+image_yscale=image_xscale
 compras = function(){
 	if(keyboard_check_pressed(ord("E"))){
 		var _posy = sprite_get_height(spr_botao1);

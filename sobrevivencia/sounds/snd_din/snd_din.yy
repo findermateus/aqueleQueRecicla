@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "snd_din.mp3",
   "type": 0,
-  "volume": 0.27,
+  "volume": 0.41,
 }

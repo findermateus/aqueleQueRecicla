@@ -1,12 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
-	toca=true;
+	//toca=true;
 	var _dia = instance_create_layer(0,0,"trans",obj_trans_dia);
 	global.dia = 1;
 	global.hostil =false;
 	 global.vel = 2;
 	 global.ammo_max=10;
-	 global.vida_max=2;
+	 global.vida_max=3;
 	
 	window_set_cursor(cr_none);
 	global.vetor_item[0]= 0;
@@ -50,7 +50,7 @@
 	global.moveis[1][3] = false;
 	
 	global.moveis[2][0] = "Geladeira";
-	global.moveis[2][1] = "Vida + 1";
+	global.moveis[2][1] = "Vida + 2";
 	global.moveis[2][2] = 70;
 	global.moveis[2][3] = false;
 	

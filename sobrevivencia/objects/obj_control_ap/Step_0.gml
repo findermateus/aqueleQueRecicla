@@ -15,7 +15,7 @@ for(var i=0;i<array_length(global.moveis)-1;i++){
 							global.ammo_max+=5;
 						break;
 						case 2:
-							global.vida_max++
+							global.vida_max+=2
 						break
 					
 					}

@@ -1,6 +1,7 @@
 global.hostil = true
 global.lugar = 1;
 global.sono = true
+
 mato = true;
 itens = true;
 qtd = irandom_range(room_width/14,room_width/15);
@@ -17,7 +18,7 @@ if (itens== true){
 		var _item = instance_create_layer(random_range(308,room_width-30),random_range(80,room_height-80),"itens",obj_barato);
 	}
 if(global.hostil){
-	repeat(random_range(3,6)+global.dia)
+	repeat(random_range(3,6)+(3*global.dia))
 	var _inimigo = instance_create_layer(random_range((room_width/2),room_width-30),random_range(80,room_height-80),"inimigos",obj_rato);
 }
 
